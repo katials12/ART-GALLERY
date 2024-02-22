@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris</title>
+    <link rel="stylesheet" href="style_C.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo opcional para mostrar el cursor como puntero al pasar sobre la imagen */
+        img {
+          cursor: pointer;
+        }
+    
+        /* Estilo para el modal */
+        .modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          justify-content: center;
+          align-items: center;
+        }
+    
+        /* Estilo para la imagen dentro del modal */
+        .modal img {
+          max-width: 80%;
+          max-height: 80%;
+        }
+
+        a {
+      text-decoration: none;
+    }
+    h1 {
+      font-size:50px; 
+      text-align: center;
+    }
+      </style>
+</head>
+<body>
+  <header id="headerl" style="background-color: rgba(0, 0, 0, 0.119); width: 100%;">
+
+    <div class="navbar" style="z-index: 2147483647 !important;">
+  
+    
+  
+        <div class="logo">
+  
+          <a href="../index.html">Alfredo's project</a>
+  
+        </div>
+        <ul class="links" >
+          <li><a href="../aboutUs.html">About us</a></li>
+          <li><a href="../SECCION1/seccion1.html">Art stages</a></li>
+          <li><a href="../SECCION2/seccion2.html">Artist</a></li>
+          <li><a href="../SECCION3/seccion3.html">Countries</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="../inicio/sign.html" class="action-button pro">Sign in</a>
+
+        </div>
+        <div class="burger-menu-button" aria-hidden="true">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+  
+  </div>
+  <div class="burger-menu">
+    <ul class="links">
+          <li><a href="#">Uno</a></li>
+          <li><a href="#">Dos</a></li>
+          <li><a href="#">Tres</a></li>
+          <li><a href="#">Cuatrp</a></li>
+          <div class="divider">
+            
+          </div>
+          <div class="buttons-burger-menu">
+            <a href="../inicio/sign.html" class="action-button pro">Sign in</a>
+ 
+          </div>
+    </ul>
+  </div>
+  </header>
+  
+  <script>
+  const burgerMenuButton= document.querySelector('.burger-menu-button')
+  const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i')
+  const burgerMenu= document.querySelector('.burger-menu')
+  
+  burgerMenuButton.onclick = function(){
+    burgerMenu.classList.toggle('open')
+    const isOpen= burgerMenu.classList.contains('open')
+    burgerMenuButtonIcon.classList= isOpen ? 'fa-solid fa-xmark': 'fa-solid fa-bars'
+  
+  }
+  </script>
+  
+    
+      <h1> <a href="seccion3.html">ART GALLERY </a></h1>
+        <h1>Country</h1>
+
+        <section id="Paris" style="display: flex;  align-items: flex-start; flex-wrap: wrap; justify-content: center;">
+
+        <div class="galeria">  
+          <div class="foto">
+        <img src="../IMG/P1.jpg" alt="Country Image 1" onclick="abrirModal('../IMG/P1.jpg')">
+          </div>
+          <div class="pie">
+            <p>The Louvre Museum</p>
+            <p>The Louvre Museum is the most important in the country and one of the most visited in the world, with more than eight million people visiting its collections every year.</p>
+          </div>
+      </div>
+
+      <div class="galeria">  
+        <div class="foto">
+        <img src="../IMG/P2.jpg" alt="Country Image 2" onclick="abrirModal('../IMG/P2.jpg')">
+      </div>
+      <div class="pie">
+        <p> Musée d'Orsay</p>
+        <p>Is an art gallery located in Paris (France) dedicated to the visual arts of the nineteenth century and, more specifically, of the period 1848-1914.</p>
+      </div>
+    </div>
+
+        <div class="galeria">  
+          <div class="foto">  
+        <img src="../IMG/P3.jpg" alt="Country Image 3" onclick="abrirModal('../IMG/P3.jpg')">
+        </div>
+        <div class="pie">
+            <p>Notre Dame</p>
+            <p>The cathedral of Notre Dame, or Notre-Dame de Paris, represents the French Gothic style in all its glory. Construction began in 1163, and since then, it has been a fundamental reference in Western culture. For this reason, this cathedral is part of the UNESCO World Heritage catalogue.</p>
+          </div>
+        </div>
+
+        <div class="galeria">  
+          <div class="foto"> 
+        <img src="../IMG/P4.jpg" alt="Country Image 4" onclick="abrirModal('../IMG/P4.jpg')">
+        </div>
+        <div class="pie">
+            <p>The Alexander III Bridge</p>
+            <p>The Alexander III Bridge symbolizes Art Nouveau, an architectural style that has greatly influenced the arts and sculpture. If you walk past it, you'll notice that it's full of detail, with shapes symbolizing plants, flowers, animals, and mystical objects, such as nymphs and cherubs, with Renaissance lanterns and winged horses at both ends.</p>
+          </div>
+    </div>
+
+        <div class="galeria">  
+          <div class="foto"> 
+        <img src="../IMG/P5.jpg" alt="Country Image 5" onclick="abrirModal('../IMG/P5.jpg')">
+        </div>
+        <div class="pie">
+            <p>Luxembourg Gardens</p>
+            <p>Paris is a city of large green spaces and one of the most well-kept and also one of the most visited are the Luxembourg Gardens, south of the Seine River. Its design, fountains and flowers are worth a visit, but don't just go to do the sightseeing check: sit down to read, buy an ice cream and watch the daily life of Paris move in this park.</p>
+          </div>
+    </div>
+    
+      </section>
+
+
+    <div id="miModal" class="modal" onclick="cerrarModal()">
+        <img src="" alt="Imagen en modal" id="imagenModal">
+      </div>
+    
+      <script>
+        // Función para abrir el modal con la imagen
+        function abrirModal(ruta) {
+          var modal = document.getElementById('miModal');
+          var imagenModal = document.getElementById('imagenModal');
+          imagenModal.src = ruta;
+          modal.style.display = 'flex';
+        }
+    
+        // Función para cerrar el modal
+        function cerrarModal() {
+          var modal = document.getElementById('miModal');
+          modal.style.display = 'none';
+        }
+      </script> 
+
+</body>
+</html>

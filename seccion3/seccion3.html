@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTRIES</title>
+    <link rel="stylesheet" href="style_C.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+      /* Estilo opcional para mostrar el cursor como puntero al pasar sobre la imagen */
+      img {
+        cursor: pointer;
+      }
+  
+      /* Estilo para el modal */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+      }
+  
+      /* Estilo para la imagen dentro del modal */
+      .modal img {
+        max-width: 80%;
+        max-height: 80%;
+      }
+
+      a {
+      text-decoration: none;
+    }
+    h1 {
+      font-size:50px; 
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <header id="headerl" style="background-color: rgba(0, 0, 0, 0.119); width: 100%;">
+
+    <div class="navbar" style="z-index: 2147483647 !important;">
+  
+    
+  
+        <div class="logo">
+  
+          <a href="../index.html">Alfredo's project</a>
+  
+        </div>
+        <ul class="links" >
+          <li><a href="../aboutUs.html">About us</a></li>
+          <li><a href="../seccion1/seccion1.html">Art stages</a></li>
+          <li><a href="../seccion2/seccion2.html">Artist</a></li>
+          <li><a href="../seccion3/seccion3.html">Countries</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="../inicio/sign.html" class="action-button pro">Sign in</a>
+
+        </div>
+        <div class="burger-menu-button" aria-hidden="true">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+  
+  </div>
+  <div class="burger-menu">
+    <ul class="links">
+          <li><a href="#">Uno</a></li>
+          <li><a href="#">Dos</a></li>
+          <li><a href="#">Tres</a></li>
+          <li><a href="#">Cuatrp</a></li>
+          <div class="divider">
+            
+          </div>
+          <div class="buttons-burger-menu">
+            <a href="../inicio/sign.html" class="action-button pro">Sign in</a>
+          </div>
+    </ul>
+  </div>
+  </header>
+  
+  <script>
+  const burgerMenuButton= document.querySelector('.burger-menu-button')
+  const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i')
+  const burgerMenu= document.querySelector('.burger-menu')
+  
+  burgerMenuButton.onclick = function(){
+    burgerMenu.classList.toggle('open')
+    const isOpen= burgerMenu.classList.contains('open')
+    burgerMenuButtonIcon.classList= isOpen ? 'fa-solid fa-xmark': 'fa-solid fa-bars'
+  
+  }
+  </script>
+  
+    <section id="countries">
+        <h1> <a  href="../index.html">Countries</a></h1>
+
+        <ul  class="menusep">
+          <li><button data-hover="click me!" onclick="window.location.href='seccion3_1.html'">
+            <div>Netherlands</div></button></li>
+          <li><button data-hover="click me!" onclick="window.location.href='seccion3_2.html'">
+            <div>Paris</div></button></li>
+          <li><button data-hover="click me!" onclick="window.location.href='seccion3_3.html'">
+          <div>London</div></button></li>
+          
+        </ul>
+        </section>
+</body>
+</html>
