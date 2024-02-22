@@ -1,0 +1,171 @@
+body {
+    background-color: #aecba8; /* Color de fondo general */
+    font-family: Arial, sans-serif; /* Fuente elegida */
+  }
+  
+  .container {
+    width: 350px;
+    margin: 100px auto; /* Centrado vertical y horizontal */
+    text-align: center;
+    background-color: #ffffff72; /* Color de fondo blanco para el área del formulario */
+    border: 2px solid #aecba8; /* Borde verde pistache */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(174, 203, 168, 0.5); /* Sombra */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 12px; /* Espaciado interior */
+    width: calc(100% - 24px); /* Ancho completo menos el espacio de relleno */
+    border: 2px solid #aecba8; /* Borde verde pistache */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: border-color 0.3s ease; /* Transición suave del color del borde */
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+    border-color: #639a6d; /* Cambiar a un tono más oscuro de verde pistache cuando se enfoca */
+  }
+  
+  button {
+    padding: 12px 24px; /* Espaciado interno */
+    background-color: #aecba8; /* Color de fondo verde pistache */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  button:hover {
+    background-color: #7a9c77; /* Cambiar a un tono más oscuro de verde pistache al pasar el ratón */
+  }
+  
+  label {
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+
+
+
+
+
+
+
+
+  #message {
+    color: #900; /* Color de texto rojo oscuro */
+    font-style: italic; /* Texto en cursiva */
+  }
+  body {
+    background-color: #aecba8; /* Color de fondo general */
+    font-family: Arial, sans-serif; /* Fuente elegida */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #7a9c77; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto blanco */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .textbox {
+    background-color: #ffffff; /* Color de fondo del cuadro de texto */
+    border: 2px solid #aecba8; /* Borde verde pistache */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    width: 45%;
+  }
+  
+  .textbox h2 {
+    color: #7a9c77; /* Color del título */
+    margin-bottom: 10px;
+  }
+  
+  .textbox p {
+    color: #444; /* Color del texto */
+    line-height: 1.5;
+  }
+  
+  footer {
+    background-color: #7a9c77; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto blanco */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  
+
+
+
+
+  
+
+
+
+  body {
+    background-color: #aecba8; /* Color de fondo general */
+    font-family: Arial, sans-serif; /* Fuente elegida */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #7a9c77; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto blanco */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .contact-info {
+    background-color: #ffffff; /* Color de fondo del cuadro de información de contacto */
+    border: 2px solid #aecba8; /* Borde verde pistache */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+  }
+  
+  .contact-info h2 {
+    color: #7a9c77; /* Color del título */
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    color: #444; /* Color del texto */
+    line-height: 1.5;
+  }
+  
+  footer {
+    background-color: #7a9c77; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto blanco */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
