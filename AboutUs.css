@@ -20,7 +20,7 @@ section{
     margin: 0 auto;
 }
 .image{
-    background: url("../img/portada.jpg") center/cover no-repeat;
+    background: url("Img/portada.jpg") center/cover no-repeat;
     width: 90%;
 }
 .content{
