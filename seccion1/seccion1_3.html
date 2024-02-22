@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="style_AS.css">
+    <title>ART STAGE</title>
+    <style>
+        /* Estilo opcional para mostrar el cursor como puntero al pasar sobre la imagen */
+        img {
+          cursor: pointer;
+        }
+    
+        /* Estilo para el modal */
+        .modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          justify-content: center;
+          align-items: center;
+        }
+    
+        /* Estilo para la imagen dentro del modal */
+        .modal img {
+          max-width: 80%;
+          max-height: 80%;
+        }
+
+        a {
+      text-decoration: none;
+    }
+    h1 {
+      font-size:50px; 
+      text-align: center;
+    }
+
+    
+      </style>
+</head>
+<body>
+  <header id="headerl" style="background-color: rgba(0, 0, 0, 0.119); width: 100%;">
+
+    <div class="navbar" style="z-index: 2147483647 !important;">
+
+    
+
+        <div class="logo">
+
+          <a href="../index.html">Alfredo's project</a>
+
+        </div>
+        <ul class="links" >
+          <li><a href="../aboutUs.html">About us</a></li>
+          <li><a href="../seccion1/seccion1.html">Art stages</a></li>
+          <li><a href="../seccion2/seccion2.html">Artist</a></li>
+          <li><a href="../seccion3/seccion3.html">Countries</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="../inicio/sign.html" class="action-button pro">Sign in</a>
+     
+        </div>
+        <div class="burger-menu-button" aria-hidden="true">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+  </div>
+  <div class="burger-menu">
+    <ul class="links">
+          <li><a href="#">Uno</a></li>
+          <li><a href="#">Dos</a></li>
+          <li><a href="#">Tres</a></li>
+          <li><a href="#">Cuatrp</a></li>
+          <div class="divider">
+            
+          </div>
+          <div class="buttons-burger-menu">
+            <a href="../inicio/sign.html" class="action-button pro">Sign in</a>
+
+          </div>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const burgerMenuButton= document.querySelector('.burger-menu-button')
+  const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i')
+  const burgerMenu= document.querySelector('.burger-menu')
+  
+  burgerMenuButton.onclick = function(){
+    burgerMenu.classList.toggle('open')
+    const isOpen= burgerMenu.classList.contains('open')
+    burgerMenuButtonIcon.classList= isOpen ? 'fa-solid fa-xmark': 'fa-solid fa-bars'
+
+  }
+</script>
+  
+  <h1> <a href="seccion1.html">ART GALLERY </a></h1>
+        <h1>  Baroque</h1>
+
+        <section id="Baroque" style="display: flex;  align-items: flex-start; flex-wrap: wrap; justify-content: center;">       
+        <div class="galery" style="height: 600px !important;">
+          <div class="foto">
+        <img src="../Img/B1.jpg" alt="Stage Image 5" onclick="abrirModal('../Img/B1.jpg')">
+          </div>
+          <div class="pie">
+            <p>Girl with a Pearl Earing, c. 1665</p>
+            <p>Girl with a Pearl Earring represents a young woman in a dark shallow space, an intimate setting that draws the viewer's attention exclusively on her.</p>
+          </div>
+
+      </div>
+        
+      <div class="galery">
+        <div class="foto">
+        <img src="../Img/B2.jpg" alt="Stage Image 3"  onclick="abrirModal('../Img/B2.jpg')">
+          </div>
+          <div class="pie">
+            <p>The Ecstasy of Saint Teresa, 1647-1652.</p>
+                  <p>Bernini employs imagery which suggests sensual pleasure, but only in order to convey the tangible nature of Teresa's experience - a manifestation of her love of God and her yearning for spiritual union with him.</p>
+          </div>
+      </div>
+        
+        <div class="galery" style="height: 450px !important;">
+          <div class="foto">
+        <img src="../Img/B3.jpg" alt="Stage Image 4"  onclick="abrirModal('../Img/B3.jpg')">
+          </div>
+          <div class="pie">
+            <p>Galerie des Glaces, Palace of Versailles.</p>
+            <p>The Hall of Mirrors is a grand Baroque style gallery and one of the most emblematic rooms in the royal Palace of Versailles near Paris, France.</p>
+      </div>
+      </div>
+        
+        
+        
+        
+   
+   
+  
+
+      
+
+        
+        <div class="galery" style="height: 480px !important;"> 
+          <div class="foto"> 
+        <img src="../Img/B4.jpg" alt="Stage Image 2"  onclick="abrirModal('../Img/B4.jpg')">
+          </div>
+          <div class="pie">
+            <p>The Calling of Saint Matthew</p>
+            <p>This period of art was really when artists began to perfect the art of using shadows in their work. Carvaggio captures here the perfect use of shadows to force a perspective on the viewer as if the children are looking at something. </p>
+      </div> 
+      </div>
+
+
+
+        <div class="galery" >
+          <div class="foto">
+        <img src="../Img/B5.jpg" alt="Stage Image 1"  onclick="abrirModal('../Img/B5.jpg')">
+          </div> 
+          <div class="pie">
+            <p>Las Meninas</p>
+            <p>A highly celebrated work of Baroque Art, it features the figures of the Spanish Royal Family and their attendants, with the princess Margarita Theresa as its focus. The work acts similarly to a snapshot, capturing the moment of action where the ladies attend upon the young princess.</p>
+      </div> 
+      </div>
+      </section>
+
+    <div id="miModal" class="modal" onclick="cerrarModal()">
+        <img src="" alt="Imagen en modal" id="imagenModal">
+      </div>
+    
+      <script>
+        function abrirModal(ruta) {
+          var modal = document.getElementById('miModal');
+          var imagenModal = document.getElementById('imagenModal');
+          imagenModal.src = ruta;
+          modal.style.display = 'flex';
+          imagenModal.style.height ="516px";
+          imagenModal.style.width ="auto";
+        }
+    
+        function cerrarModal() {
+          var modal = document.getElementById('miModal');
+          modal.style.display = 'none';
+        }
+      </script>
+
+</body>
+</html>

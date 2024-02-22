@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ART STAGE</title>
+    <link rel="stylesheet" href="style_AS.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo opcional para mostrar el cursor como puntero al pasar sobre la imagen */
+        img {
+          cursor: pointer;
+        }
+    
+        /* Estilo para el modal */
+        .modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          justify-content: center;
+          align-items: center;
+        }
+    
+        /* Estilo para la imagen dentro del modal */
+        .modal img {
+          max-width: 80%;
+          max-height: 80%;
+        }
+
+        a {
+      text-decoration: none;
+    }
+    h1 {
+      font-size:50px; 
+      text-align: center;
+    }
+      </style>
+</head>
+<body>
+  <header id="headerl" style="background-color: rgba(0, 0, 0, 0.119); width: 100%;">
+
+    <div class="navbar" style="z-index: 2147483647 !important;">
+
+    
+
+        <div class="logo">
+
+          <a href="../index.html">Alfredo's project</a>
+
+        </div>
+        <ul class="links" >
+          <li><a href="../aboutUs.html">About us</a></li>
+          <li><a href="../seccion1/seccion1.html">Art stages</a></li>
+          <li><a href="../seccion2/seccion2.html">Artist</a></li>
+          <li><a href="../seccion3/seccion3.html">Countries</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="../inicio/sign.html" class="action-button pro">Sign in</a>
+       
+        </div>
+        <div class="burger-menu-button" aria-hidden="true">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+  </div>
+  <div class="burger-menu">
+    <ul class="links">
+          <li><a href="#">Uno</a></li>
+          <li><a href="#">Dos</a></li>
+          <li><a href="#">Tres</a></li>
+          <li><a href="#">Cuatrp</a></li>
+          <div class="divider">
+            
+          </div>
+          <div class="buttons-burger-menu">
+            <a href="../inicio/sign.html" class="action-button pro">Sign in</a>
+
+          </div>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const burgerMenuButton= document.querySelector('.burger-menu-button')
+  const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i')
+  const burgerMenu= document.querySelector('.burger-menu')
+  
+  burgerMenuButton.onclick = function(){
+    burgerMenu.classList.toggle('open')
+    const isOpen= burgerMenu.classList.contains('open')
+    burgerMenuButtonIcon.classList= isOpen ? 'fa-solid fa-xmark': 'fa-solid fa-bars'
+
+  }
+</script>
+      <h1> <a href="seccion1.html">ART GALLERY </a></h1>
+     
+
+        <h1>  Ancient </h1>
+        <section id="Ancient" style="display: flex;  align-items: center; flex-wrap: wrap; justify-content: center;">    
+    
+
+     <div class="galery">
+       <div class="foto">
+        <img src="../Img/An2.jpg" alt="Stage Image 3" onclick="abrirModal('../Img/An2.jpg')">
+       </div>
+       <div class="pie">
+        <p> Porch of the Caryatids, Erechtheion</p>
+        <p>An ancient Greek garment created from a single piece of cloth wrapped around the body and held together by pins at the shoulders.</p>
+      </div>
+    </div>
+
+     <div class="galery">
+       <div class="foto">
+        <img src="../Img/An3.jpg" alt="Stage Image 4"  onclick="abrirModal('../Img/An3.jpg')">
+       </div>
+       <div class="pie">
+        <p>Minoan 'Procession Fresco' from Knossos</p>
+        <p>Minoan men are seen in loincloths, cloaks, and sandals but seem to have gone mostly barefoot, especially indoors. Men are also depicted wearing armbands, wristbands, and jewelry. </p>
+      </div>
+     </div>
+
+    <div class="galery">
+        <div class="foto">
+        <img src="../Img/An4.jpg" alt="Stage Image 2" onclick="abrirModal('../Img/An4.jpg')">
+    </div>
+    <div class="pie">
+      <p>Ancient Greek</p>
+      <p></p>
+    </div>
+        </div>
+
+   <div class="galery">
+      <div class="foto">
+        <img src="../Img/An5.jpg" alt="Stage Image 1" onclick="abrirModal('../Img/An5.jpg')">
+      </div>
+    <div class="pie">
+      <p>Ancient Egyptian Fashion</p>
+      <p> Jewelry would have been considered essential and most Egyptians wore far more pieces of jewelry than they did articles of clothing.</p>
+    </div>
+  </div>
+  <div class="galery">
+    <div class="foto">
+      <img src="../Img/An1.jpg" alt="Stage Image 5" onclick="abrirModal('../Img/An1.jpg')">
+    </div>
+    <div class="pie">
+      <p>Marble grave stele of a little girl</p>
+      <p>The gentle gravity of this child is beautifully expressed through her sweet farewell to her pet doves. Her peplos is unbelted and falls open at the side, while the folds of drapery clearly reveal her stance. Many of the most skillful stone carvers came from the Cycladic Islands, where marble was plentiful.</p>
+    </div>
+  </div>
+    
+      </section>
+
+    <div id="miModal" class="modal" onclick="cerrarModal()">
+        <img src="" alt="Imagen en modal" id="imagenModal">
+      </div>
+    
+      <script>
+        function abrirModal(ruta) {
+          var modal = document.getElementById('miModal');
+          var imagenModal = document.getElementById('imagenModal');
+          imagenModal.src = ruta;
+          modal.style.display = 'flex';
+          imagenModal.style.height ="516px";
+          imagenModal.style.width ="auto";
+        }
+    
+        function cerrarModal() {
+          var modal = document.getElementById('miModal');
+          modal.style.display = 'none';
+        }
+      </script>
+
+</body>
+</html>
