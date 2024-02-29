@@ -24,8 +24,9 @@ const urlsToCache = [
     'seccion3/seccion3_2.html',
     'seccion3/seccion3_3.html',
     'seccion3/style_C.css',
-    'Img/A1.jpg'
-
+    'Img/A1.jpg',
+    'Img/A2.jpg',
+    'img/A3.jpg'
     
 ];
 
