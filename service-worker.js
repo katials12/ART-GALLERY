@@ -80,7 +80,7 @@ const urlsToCache = [
     'Img/R2.jpg',
     'Img/R3.jpg',
     'Img/R4.jpg',
-    'Img/R5.jpg',
+    'Img/R5.jpg'
 
     
 ];
