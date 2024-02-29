@@ -8,7 +8,22 @@ const urlsToCache = [
     'inicio/contact.html',
     'inicio/sign.html',
     'inicio/script.js',
-    'inicio/styles.css'
+    'inicio/styles.css',
+    'seccion1/seccion1.html',
+    'seccion1/seccion1_1.html',
+    'seccion1/seccion1_2.html',
+    'seccion1/seccion1_3.html',
+    'seccion1/style_AS.css',
+    'seccion2/seccion2.html',
+    'seccion2/seccion2_1.html',
+    'seccion2/seccion2_2.html',
+    'seccion2/seccion2_3.html',
+    'seccion2/style_A.css',
+    'seccion3/seccion3.html',
+    'seccion3/seccion3_1.html',
+    'seccion3/seccion3_2.html',
+    'seccion3/seccion3_3.html',
+    'seccion3/style_C.css'
 
     
 ];
