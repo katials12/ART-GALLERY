@@ -26,7 +26,7 @@ const urlsToCache = [
     'seccion3/style_C.css',
     'Img/A1.jpg',
     'Img/A2.jpg',
-    'img/A3.jpg',
+    'Img/A3.jpg',
     'Img/A4.jpg'
 
     
