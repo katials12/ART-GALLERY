@@ -26,7 +26,7 @@ const urlsToCache = [
     'seccion3/style_C.css',
     'Img/A1.jpg',
     'Img/A2.jpg',
-    'Img/A3.jpg',
+    'img/A3.jpg',
     'Img/A4.jpg',
     'Img/A5.jpg',
     'Img/Adele.jpg',
@@ -80,7 +80,7 @@ const urlsToCache = [
     'Img/R2.jpg',
     'Img/R3.jpg',
     'Img/R4.jpg',
-    'Img/R5.jpg'
+    'Img/R5.jpg',
 
     
 ];
@@ -122,4 +122,3 @@ self.addEventListener('DOMContentLoaded', () => {
         messageElement.textContent = 'La aplicación puede no funcionar correctamente sin conexión.';
     }
 });
-
